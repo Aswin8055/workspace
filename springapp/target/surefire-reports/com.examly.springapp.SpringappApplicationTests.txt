@@ -1,0 +1,52 @@
+-------------------------------------------------------------------------------
+Test set: com.examly.springapp.SpringappApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 11, Errors: 0, Skipped: 0, Time elapsed: 3.319 s <<< FAILURE! - in com.examly.springapp.SpringappApplicationTests
+com.examly.springapp.SpringappApplicationTests.testAddEmployeesToDatabase  Time elapsed: 0.459 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<201> but was:<404>
+	at com.examly.springapp.SpringappApplicationTests.testAddEmployeesToDatabase(SpringappApplicationTests.java:54)
+
+com.examly.springapp.SpringappApplicationTests.testgetAll  Time elapsed: 0.011 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at com.examly.springapp.SpringappApplicationTests.testgetAll(SpringappApplicationTests.java:67)
+
+com.examly.springapp.SpringappApplicationTests.testgetByID  Time elapsed: 0.027 s  <<< FAILURE!
+java.lang.AssertionError: No value at JSON path "$.designation"
+	at com.examly.springapp.SpringappApplicationTests.testgetByID(SpringappApplicationTests.java:78)
+Caused by: java.lang.IllegalArgumentException: json can not be null or empty
+	at com.examly.springapp.SpringappApplicationTests.testgetByID(SpringappApplicationTests.java:78)
+
+com.examly.springapp.SpringappApplicationTests.testGetGroupBy  Time elapsed: 0.011 s  <<< FAILURE!
+java.lang.AssertionError: No value at JSON path "$.Tester[0].id"
+	at com.examly.springapp.SpringappApplicationTests.testGetGroupBy(SpringappApplicationTests.java:88)
+Caused by: java.lang.IllegalArgumentException: json can not be null or empty
+	at com.examly.springapp.SpringappApplicationTests.testGetGroupBy(SpringappApplicationTests.java:88)
+
+com.examly.springapp.SpringappApplicationTests.testGetEmployeesByAttributeName  Time elapsed: 0.016 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at com.examly.springapp.SpringappApplicationTests.testGetEmployeesByAttributeName(SpringappApplicationTests.java:124)
+
+com.examly.springapp.SpringappApplicationTests.testGetEmployeesBySalaryRange  Time elapsed: 0.01 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at com.examly.springapp.SpringappApplicationTests.testGetEmployeesBySalaryRange(SpringappApplicationTests.java:143)
+
+com.examly.springapp.SpringappApplicationTests.testrepositoryfolder  Time elapsed: 0.007 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.examly.springapp.SpringappApplicationTests.testrepositoryfolder(SpringappApplicationTests.java:199)
+
+com.examly.springapp.SpringappApplicationTests.testModelFile  Time elapsed: 0.004 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.examly.springapp.SpringappApplicationTests.testModelFile(SpringappApplicationTests.java:191)
+
+com.examly.springapp.SpringappApplicationTests.testModelFolder  Time elapsed: 0.003 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.examly.springapp.SpringappApplicationTests.testModelFolder(SpringappApplicationTests.java:184)
+
+com.examly.springapp.SpringappApplicationTests.controllerfolder  Time elapsed: 0.003 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.examly.springapp.SpringappApplicationTests.controllerfolder(SpringappApplicationTests.java:170)
+
+com.examly.springapp.SpringappApplicationTests.controllerfile  Time elapsed: 0.003 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.examly.springapp.SpringappApplicationTests.controllerfile(SpringappApplicationTests.java:177)
+
